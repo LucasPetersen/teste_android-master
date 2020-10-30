@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lista de Produtos</string>
+    <string name="divisor">-</string>
+    <string name="no_products">Não há produtos</string>
+</resources>
