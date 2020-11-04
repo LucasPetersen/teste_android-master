@@ -30,7 +30,7 @@ public class ProdutoViewModel extends ViewModel {
         return produtosAdapter;
     }
 
-    public void setProdutosAdapter(List<Produto> produtoList) {
+    public void setProdutosInAdapter(List<Produto> produtoList) {
         produtosAdapter.setProdutos( produtoList );
         produtosAdapter.notifyDataSetChanged();
     }

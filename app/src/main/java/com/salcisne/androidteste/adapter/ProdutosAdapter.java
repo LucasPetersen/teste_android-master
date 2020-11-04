@@ -20,7 +20,6 @@ public class ProdutosAdapter extends RecyclerView.Adapter<ProdutosAdapter.Generi
     private List<Produto> produtos;
 
 
-
     public ProdutosAdapter(@LayoutRes int layoutId, ProdutoViewModel viewModel ) {
         this.layoutId = layoutId;
         this.viewModel = viewModel;
@@ -36,6 +35,7 @@ public class ProdutosAdapter extends RecyclerView.Adapter<ProdutosAdapter.Generi
     }
 
 
+    @NonNull
     public GenericViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         ViewDataBinding binding = DataBindingUtil.inflate(layoutInflater, viewType, parent, false);
@@ -56,6 +56,7 @@ public class ProdutosAdapter extends RecyclerView.Adapter<ProdutosAdapter.Generi
     public void setProdutos(List<Produto> produtos) {
         this.produtos = produtos;
     }
+
     class GenericViewHolder extends RecyclerView.ViewHolder {
         final ViewDataBinding binding;
 

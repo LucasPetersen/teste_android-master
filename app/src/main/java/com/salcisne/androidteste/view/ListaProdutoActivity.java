@@ -79,7 +79,7 @@ public class ListaProdutoActivity extends AppCompatActivity {
                     viewModel.showEmpty.set(View.VISIBLE);
                 } else {
                     viewModel.showEmpty.set(View.GONE);
-                    viewModel.setProdutosAdapter(produtos);
+                    viewModel.setProdutosInAdapter(produtos);
                 }
             }
         });
